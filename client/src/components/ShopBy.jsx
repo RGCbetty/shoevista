@@ -26,11 +26,11 @@ const ShopBy = ({ filter, title }) => {
         }
       }
     };
-    fetchData();
+     if (filter) fetchData();
     return () => {
       isMounted = false;
     };
-  }, []);
+  }, [filter]);
 
   return (
     <>
